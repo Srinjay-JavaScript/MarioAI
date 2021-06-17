@@ -1,0 +1,38 @@
+.divHeading {
+  width: 100%;
+  font-family: "Consolas";
+
+  border: black 3px solid;
+  font-weight: bolder;
+  color: black;
+}
+.divHeading h3 {
+  display: inline;
+}
+.divHeading button {
+  float: right;
+}
+.modal-dialog {
+  width: 90%;
+} 
+.imgInst {
+  display: inline-block;
+  width: 45%;
+}
+video{
+  border-radius: 25px;
+  border: 3px white solid;
+  background: url('game_console.png');
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+}
+#playGame{
+  background-color: darkblue;
+  width: 60%;
+  border-radius: 25px;
+  border: 3px white dotted;
+  font-weight: bolder;
+  color: white;
+  height: 40px;
+}

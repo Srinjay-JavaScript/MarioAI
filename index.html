@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>p5.play.Mario</title>
+    <link rel="shortcut icon" href="marioLogo.png" type="x/image">
+    <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+    <script src="lib/p5.min.js" type="text/javascript"></script>
+    <!-- link p5.play.js -->
+    <script src="lib/p5.play.js" type="text/javascript"></script>
+    <!-- link p5.dom.js -->
+    <script src="lib/p5.dom.js" type="text/javascript"></script>
+    <!-- link your javascript sketch -->
+    <script src="scripts/sprites.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <script src="characters_environment.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+  </head>
+  <body style="background-color: rgb(138, 8, 8);">
+    <center>
+    <div class="divHeading" style="background-color: rgb(6, 6, 151);">
+    <h1 style="font-weight: bold; color: white;">AI Mario Game
+    <button class="btn btn-primary" data-toggle="modal" data-target="#modalInstructions">Instructions</button>
+  </h1>
+    </div>
+    <br>
+    <br>
+    <img src="mario.jpg" width="80%" class="img-thumbnail">
+    <br><br>
+    <button onclick="startgame()" id="playGame">Play Game</button>
+    <br><br>
+    <h3 class="btn btn-success" id="status">Status: </h3>
+    <div class="divClass" id="canvas"></div>
+    <div class="divClass" id="gameConsole"></div>
+   
+
+
+
+    <!--Modal-->
+    <div class="modal fade" id="modalInstructions">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h1 style="font-weight: bolder;">Instructions</h1>
+            </div>
+            <div class="modal-body">
+              <img src="jump.png" class="img-responsive img-thumbnail imgInst">
+              <img src="right.png" class="img-responsive img-thumbnail imgInst">
+              <img src="left.png" class="img-responsive img-thumbnail imgInst">
+            </div>
+         </div>
+      </div>
+    </div>
+    <h4 style="color: black; width: 100%; font-weight: bolder; position: fixed; bottom: 0; left:0; text-align: center;" class="btn btn-info">Source Code: <a href="https://github.com/linuk" target="_blank">linuk</a> Game Credit: Mario</h4>
+  </center>
+  </body>
+</html>
